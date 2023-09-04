@@ -17,6 +17,7 @@ import { NavLink } from "react-router-dom";
 const Navbar: FC = (): ReactElement => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const handleOpenNavMenu = (event: any) => {
+    console.log(anchorElNav);
     setAnchorElNav(event.currentTarget);
   };
   const handleCloseNavMenu = () => {
@@ -40,7 +41,7 @@ const Navbar: FC = (): ReactElement => {
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
-              aria-aria-haspopup="true"
+              aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
             >
