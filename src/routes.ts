@@ -2,6 +2,7 @@ import { FC } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
+import Todos from "./pages/Todos";
 
 interface Route {
   key: string;
@@ -32,5 +33,12 @@ export const routes: Array<Route> = [
     path: "/products",
     enabled: true,
     component: Products,
+  },
+  {
+    key: "todos-route",
+    title: "Todos",
+    path: "/todos",
+    enabled: true,
+    component: Todos,
   },
 ];

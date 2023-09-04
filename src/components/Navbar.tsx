@@ -9,10 +9,9 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-
 import MenuIcon from "@mui/icons-material/Menu";
-import { routes } from "../routes";
 import { NavLink } from "react-router-dom";
+import { routes } from "../routes";
 
 const Navbar: FC = (): ReactElement => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
